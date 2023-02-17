@@ -1,4 +1,5 @@
 {
+  "homepage": "https://Azharnaseem.github.io/Azharnaseemportfolio",
   "name": "awesome-react-portfolio",
   "version": "0.1.0",
   "private": true,
@@ -12,6 +13,7 @@
     "flag-icon-css": "^3.5.0",
     "formik": "^2.2.9",
     "framer-motion": "^4.1.17",
+    "gh-pages": "^5.0.0",
     "i18next": "^20.4.0",
     "i18next-browser-languagedetector": "^6.1.2",
     "js-cookie": "^3.0.0",
@@ -26,6 +28,8 @@
     "yup": "^0.32.9"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "format": "prettier --write .",
